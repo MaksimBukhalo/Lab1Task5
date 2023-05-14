@@ -1,0 +1,28 @@
+﻿<html>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { packages: ['wordtree'] });
+        google.charts.setOnLoadCallback(drawSimpleNodeChart);
+        function drawSimpleNodeChart() {
+            var data = google.visualization.arrayToDataTable(
+                [['Phrases'],
+                    ['ON JANUARY 6, 2021, as a crowd of Donald Trump supporters began gathering for a rally near the foot of the Washington Monument, Elies Campo was spending a poignant afternoon at his familys home in Tortosa, Spain.January 6—the feast of the Epiphany, or Three Kings Day—is the high point of the holiday season there, when relatives visit and children open their presents.And Campo, a 38 - year - old Spanish engineer who lives in Silicon Valley, had been largely stranded away from home since the start of the coronavirus pandemic.As he moved through the house, Campo was surrounded by uncles and aunts and cousins, and he got to hold a couple of their babies for the first time.His mind was about as far from the United States as it could possibly be. That changed around 8 pm, when a friend in the US pinged to ask if Campo had seen the news out of Washington, DC.Then came an avalanche of similar messages about the mob that had just stormed the Capitol building.As Campo watched the scenes of violence unfold on his phone, a question started to eat at him: How was this going to affect his company ? Campo worked at Telegram, a messaging app and social network with a global user base of hundreds of millions.Now, as he looked around various other social media platforms, he noticed that far - right figures were posting links on those sites to their public channels on Telegram and urging their followers to join the app.Mind racing, Campo excused himself, went upstairs to his room, and continued to scour social media platforms on his laptop and phone.Within six hours, both Facebook and Twitter had blocked Trumps posts, and Campo watched more and more pro-Trump figures, fearful that they would be banned too, flood onto Telegram, bringing their audiences with them. Déu meu, he muttered to himself in Catalan—My God. WIRED 30.03   How Telegram Became the AntiFacebook This article appears in the March 2022 issue.Subscribe to WIRED.ILLUSTRATION: XEMRIND In the world of social media, Telegram is a distinct oddity.Often rounding out lists of the worlds 10 largest platforms, it has just around 30 core employees, had no source of ongoing revenue until very recently, and—in an era when tech firms face increasing pressure to quash hate speech and misinformation—exercises virtually no content moderation, except to take down illegal pornography and calls for violence.At Telegram it is an article of faith, and a marketing pitch, that the companys platform should be available to all, regardless of politics or ideology. “For us, Telegram is an idea,” Pavel Durov, Telegrams Russian founder, has said. “It is the idea that everyone on this planet has a right to be free.” Campo shared that faith—but as Telegrams head of growth, business, and partnerships, he also bore the brunt of its complications.In the mid - 2010s, when the media began referring to Telegram as the “app of choice” for jihadists, it was Campo who fretted most about ISIS use of the platform.He says he often feels like an anxious parent when messaging Durov. “Im the nag,” Campo says. What troubled him now was how the influx of insurrection-adjacent Americans would play in the media and with the business partners he had to deal with. So he wrote a long message to Durov. “Good evening Pavel,” he recalls it opening. “Have you been looking at whats happening in the US ? Have you seen Trump is being blocked on other social networks ?” He warned that the US far rights embrace of Telegram could “potentially eclipse” a far more flattering story that was, by sheer coincidence, driving its own stampede of new users onto the platform. TRENDING NOW How This Guy Folds and Flies World Record Paper Airplanes MOST POPULAR uman hands holding the Google Pixel Fold smartphone']
+            ]
+            );
+            var options = {
+                wordtree: {
+                    format: 'implicit',
+                    type: 'double',
+                    word: 'Telegram'
+                }
+            };
+            var wordtree = new google.visualization.WordTree(document.getElementById('wordtree_double'));
+            wordtree.draw(data, options);
+        }
+    </script>
+</head>
+<body>
+    <div id="wordtree_double" style="width: 900px; height: 500px;"></div>
+</body>
+</html>
